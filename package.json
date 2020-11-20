@@ -1,0 +1,19 @@
+{
+  "name": "python-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "pytest",
+    "test:watch": "nodemon --exec \"python -m pytest -s -v tests/\" -e py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
