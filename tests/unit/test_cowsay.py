@@ -11,3 +11,4 @@ def test_basic(capsys):
 
 def test_tmp_path(tmp_path):
     print(f'tmp_path: {tmp_path}')
+    assert True, True
