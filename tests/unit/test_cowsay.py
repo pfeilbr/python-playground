@@ -1,14 +1,12 @@
-import pytest
-import cowsay
 import json
 
+import cowsay
 
-def test_basic(capsys, tmp_path):
-    print(tmp_path)
+
+def test_basic(capsys):
     cowsay.cow("hello")
     captured = capsys.readouterr()
-    # print(captured.out)
-    assert 1 == 1
+    assert isinstance(captured.out, str)
 
 
 def test_tmp_path(tmp_path):

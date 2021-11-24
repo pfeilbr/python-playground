@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "pytest",
+    "test": "PYTHONPATH=. pytest",
     "test:watch": "nodemon --exec \"python -m pytest -s -v tests/\" -e py"
   },
   "keywords": [],
